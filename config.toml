@@ -1,0 +1,13 @@
+baseURL = "https://indigenousbiotech.com/"
+languageCode = "en-us"
+title = "Indigenous Biotechnology"
+theme = "beautifulhugo"
+
+[params]
+homeTitle = "Indigenous Biotechnology"
+subtitle = "Sign up to join the founding network:"
+customCSS = ["css/custom.css"]
+
+[params.contact]
+email = "mctastolfi@gmail.com"
+formAction = "https://formspree.io/f/mpwdrnro"  # your real Formspree link
