@@ -2,6 +2,7 @@ baseURL = "https://indigenousbiotech.com/"
 languageCode = "en-us"
 title = "Indigenous Biotechnology"
 theme = "beautifulhugo"
+publishDir = "docs"
 
 [params]
 homeTitle = "Indigenous Biotechnology"
