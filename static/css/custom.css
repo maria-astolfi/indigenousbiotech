@@ -11,17 +11,28 @@ body {
   color: #eaeaea;
 }
 
-/* Title font styling */
 h1 {
-  font-size: 1.0 rem;       /* Shrink to fit on one line */
-  font-weight: 600;
-  white-space: nowrap;
-  overflow-wrap: normal;
-  color: #ffffff;
+  font-size: 2rem;         /* smaller size like Hugo Gallery */
+  font-weight: 500;        /* lighter than bold */
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  white-space: normal;
+  color: #f4f4f4;
+  margin-bottom: 0.5rem;
 }
 
-/* Subheadings */
-h2, .subheading, .page-subheading {
-  color: #bbbbbb;
+.subheading, h2 {
+  font-size: 1rem;
   font-weight: 400;
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
