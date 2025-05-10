@@ -1,13 +1,8 @@
+/* Apply Inter font and dark theme */
 body {
-  font-family: 'Inter', sans-serif;
-}
-
-
-/* Font */
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #111;  /* Dark background */
-  color: #eaeaea;          /* Light text */
+  font-family: 'Inter', 'system-ui', sans-serif;
+  background-color: #111;
+  color: #eaeaea;
 }
 
 /* Header section */
@@ -16,49 +11,17 @@ body {
   color: #eaeaea;
 }
 
-/* Title font size and color */
+/* Title font styling */
 h1 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 2.6rem;       /* Shrink to fit on one line */
+  font-weight: 600;
+  white-space: nowrap;
+  overflow-wrap: normal;
   color: #ffffff;
 }
 
 /* Subheadings */
 h2, .subheading, .page-subheading {
   color: #bbbbbb;
-}
-
-/* Inputs and buttons */
-input[type="email"] {
-  background-color: #222;
-  color: #f0f0f0;
-  border: 1px solid #555;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-input[type="email"]::placeholder {
-  color: #888;
-}
-
-input[type="submit"], button, .btn {
-  background-color: #333;
-  color: #eaeaea;
-  border: 1px solid #555;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover,
-button:hover {
-  background-color: #444;
-  border-color: #666;
-}
-
-/* Footer */
-footer {
-  background-color: #111;
-  color: #888;
-  border-top: 1px solid #222;
+  font-weight: 400;
 }
