@@ -10,3 +10,8 @@ h1 {
   color: #222;
   margin: 0.5rem 0;
 }
+
+
+.navbar {
+  display: none !important;
+}
