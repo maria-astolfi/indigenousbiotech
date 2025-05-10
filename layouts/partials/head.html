@@ -1,0 +1,13 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Title -->
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+
+<!-- Load default theme CSS -->
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+
+<!-- Load custom CSS if defined -->
+{{- range .Site.Params.customCSS }}
+  <link rel="stylesheet" href="{{ . | relURL }}">
+{{- end }}
