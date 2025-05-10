@@ -1,5 +1,5 @@
 {{ if le hugo.Version "0.124.0" }}
-	{{ errorf "Please use Hugo version 0.124.0 or higher!" }}
+  {{ errorf "Please use Hugo version 0.124.0 or higher!" }}
 {{ end }}
 
 <!DOCTYPE html>
@@ -8,7 +8,6 @@
     {{ partial "head.html" . }}
   </head>
   <body>
-    {{/* partial "nav.html" . */}} <!-- navbar disabled -->
     {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
     {{ block "main" . }}{{ end }}
     {{ partial "footer.html" . }}
