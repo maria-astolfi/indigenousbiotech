@@ -13,7 +13,7 @@ body {
 
 /* Title font styling */
 h1 {
-  font-size: 2.6rem;       /* Shrink to fit on one line */
+  font-size: 1.0 rem;       /* Shrink to fit on one line */
   font-weight: 600;
   white-space: nowrap;
   overflow-wrap: normal;
