@@ -14,32 +14,33 @@ body {
   color: #eaeaea;
 }
 
-/* Title styling */
+/* Title */
 .page-heading h1,
 .home-heading h1,
 .intro-header h1 {
-  font-size: 1.8rem !important;
-  font-weight: 500 !important;
+  font-size: 2.4rem !important;   /* Balanced size */
+  font-weight: 600 !important;
   line-height: 1.2 !important;
   text-align: center;
   color: #f4f4f4 !important;
   margin-bottom: 0.5rem;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   word-break: break-word;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
-/* Subtitle styling */
+/* Subtitle */
 .page-subheading,
 .intro-header h2,
 .intro-header .subheading {
-  font-size: 1rem !important;
+  font-size: 1.05rem !important;
   font-weight: 400 !important;
-  color: #999 !important;
+  color: #aaaaaa !important;
   text-align: center;
   margin-bottom: 2rem;
-  line-height: 1.5;
+  line-height: 1.4;
 }
+
 
 /* Form layout */
 form {
@@ -93,12 +94,12 @@ footer {
   .page-heading h1,
   .home-heading h1,
   .intro-header h1 {
-    font-size: 1.4rem !important;
+    font-size: 2rem !important;
   }
 
   .page-subheading,
   .intro-header h2,
   .intro-header .subheading {
-    font-size: 0.9rem !important;
+    font-size: 0.95rem !important;
   }
 }
