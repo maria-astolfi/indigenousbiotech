@@ -1,7 +1,12 @@
-hr.small {
+/* Remove default decorations */
+hr.small,
+.navbar,
+.navbar-toggle,
+.navbar-header {
   display: none !important;
 }
 
+/* Title Styling */
 h1 {
   font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: 700;
@@ -11,12 +16,135 @@ h1 {
   margin: 0.5rem 0;
 }
 
-
-.navbar {
-  display: none !important;
+/* Story Section */
+.story-panel {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #111;
+  color: #fff;
+  padding: 3rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.navbar-toggle,
-.navbar-header {
-  display: none !important;
+/* Left-aligned text */
+.story-text {
+  flex: 1 1 50%;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+/* Keep h2 bold and aligned left */
+.story-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #f0f0f0;
+}
+
+/* Light paragraph styling */
+.story-text p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Image Styling */
+.story-image {
+  flex: 1 1 50%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.story-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Email form styling */
+form {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+input[type="email"] {
+  background-color: #e0e0e0;  /* lighter grey */
+  color: #000;                /* dark text for contrast */
+  border: 1px solid #aaa;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
+input[type="submit"],
+button[type="submit"] {
+  background-color: #333;
+  color: #eaeaea;
+  border: 1px solid #555;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  background-color: #444;
+  border-color: #666;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .story-text,
+  .story-image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .story-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .story-text p {
+    font-size: 1rem;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+
+.coming-soon-panel {
+  background-color: #fff;
+  color: #111;
+  text-align: center;
+  padding: 3rem 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.coming-soon-panel h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.photo-credit {
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  color: #aaa;
+  margin-top: 0.5rem;
+  text-align: left;
+  font-style: italic;
 }
