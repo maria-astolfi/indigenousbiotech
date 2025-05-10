@@ -12,23 +12,38 @@ body {
 }
 
 h1 {
-  font-size: 2rem;         /* smaller size like Hugo Gallery */
-  font-weight: 500;        /* lighter than bold */
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.1;
   text-align: center;
-  white-space: normal;
   color: #f4f4f4;
   margin-bottom: 0.5rem;
+  letter-spacing: -0.015em;
+  word-break: break-word;
 }
 
-.subheading, h2 {
-  font-size: 1rem;
+.subheading,
+.page-subheading,
+h2 {
+  font-size: 0.5rem;
   font-weight: 400;
-  color: #aaa;
+  color: #999;
   text-align: center;
   margin-bottom: 2rem;
+  line-height: 1.5;
 }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .subheading,
+  h2 {
+    font-size: 0.9rem;
+  }
+}
+
 
 form {
   display: flex;
