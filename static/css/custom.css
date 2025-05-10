@@ -20,8 +20,8 @@ h1 {
 .story-panel {
   display: flex;
   flex-wrap: wrap;
-  background-color: #111;
-  color: #fff;
+  background-color: #111 !important;
+  color: #eaeaea !important;
   padding: 3rem 1rem;
   align-items: center;
   justify-content: space-between;
@@ -52,6 +52,12 @@ h1 {
   color: #ccc;
   line-height: 1.6;
   text-align: left;
+}
+
+.story-text p {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 300;
+  color: #ccc;
 }
 
 /* Image Styling */
@@ -147,4 +153,22 @@ button[type="submit"]:hover {
   margin-top: 0.5rem;
   text-align: left;
   font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .story-panel {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .story-text, .story-image {
+    flex: 1 1 100%;
+    padding: 1rem 0;
+    text-align: left;
+  }
+
+  .story-image img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
