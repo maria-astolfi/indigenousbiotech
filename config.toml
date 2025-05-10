@@ -12,3 +12,8 @@ customCSS = ["css/custom.css"]
 [params.contact]
 email = "mctastolfi@gmail.com"
 formAction = "https://formspree.io/f/mpwdrnro"  # your real Formspree link
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
